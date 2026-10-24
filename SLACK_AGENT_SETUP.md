@@ -2,6 +2,8 @@
 
 Use Slack for quick coordination during the hackathon. Use `coordination/updates/` in this repo for durable updates that every agent can read after pulling the latest changes.
 
+The project channel is [#sasehacks2026 in the flhasbhang workspace](https://app.slack.com/client/T0CBTFS6X5G/C0CCN2V2AQY). It is a public channel within that Slack workspace. Open the link after joining the workspace; the channel currently has one member, so the team still needs to join it. If you are not a workspace member, ask the team lead to add you to the workspace first.
+
 ## One-time setup
 
 1. Join the team's Slack workspace and ask a workspace admin to approve Slack MCP access if the connection is blocked.

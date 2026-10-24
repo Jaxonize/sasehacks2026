@@ -16,7 +16,7 @@ Open <http://localhost:3000>. Keep the terminal open while you work. Stop the ap
 ## First steps tomorrow
 
 1. Read [`HACKATHON_HANDOFF.md`](./HACKATHON_HANDOFF.md) with your team.
-2. Use the team's Slack channel for live conversation and [`TEAM_COORDINATION.md`](./TEAM_COORDINATION.md) plus `coordination/updates/` for decisions and handoffs agents on other laptops can read through Git. Setup steps for Claude Code, Gemini CLI, and Antigravity are in [`SLACK_AGENT_SETUP.md`](./SLACK_AGENT_SETUP.md).
+2. Use [#sasehacks2026 in Slack](https://app.slack.com/client/T0CBTFS6X5G/C0CCN2V2AQY) for live conversation and [`TEAM_COORDINATION.md`](./TEAM_COORDINATION.md) plus `coordination/updates/` for decisions and handoffs agents on other laptops can read through Git. Setup steps for Claude Code, Gemini CLI, and Antigravity are in [`SLACK_AGENT_SETUP.md`](./SLACK_AGENT_SETUP.md).
 3. Paste the exact hackathon prompt into your AI coding tool and ask it to help you agree on the smallest demo that satisfies the judging criteria.
 4. Put the agreed goal and team roles in the handoff doc.
 5. Build one working path through the demo before adding extra features.

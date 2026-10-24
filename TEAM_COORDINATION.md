@@ -1,6 +1,6 @@
 # Team and agent coordination
 
-Use the team's Slack channel for quick, live team conversation. Use this repository for the durable record so agents on other laptops and in other coding tools can catch up without controlling anyone's desktop. See [`SLACK_AGENT_SETUP.md`](./SLACK_AGENT_SETUP.md) for connecting Claude Code, Gemini CLI, and Antigravity.
+Use [#sasehacks2026 in the flhasbhang Slack workspace](https://app.slack.com/client/T0CBTFS6X5G/C0CCN2V2AQY) for quick, live team conversation. Use this repository for the durable record so agents on other laptops and in other coding tools can catch up without controlling anyone's desktop. See [`SLACK_AGENT_SETUP.md`](./SLACK_AGENT_SETUP.md) for connecting Claude Code, Gemini CLI, and Antigravity.
 
 ## When an agent starts
 
