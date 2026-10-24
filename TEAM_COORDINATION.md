@@ -21,6 +21,19 @@ Create or update one file per agent session in `coordination/updates/`, named wi
 
 Keep updates short. Never put passwords, API keys, private environment values, or other secrets in Slack, Git, or these notes. Commit and push updates when the human has authorized that; otherwise leave them local and tell the human they need to push for teammates to see them. Important decisions from Slack should be copied here.
 
+## Acknowledging messages in Slack
+
+When an agent reads a direct request, assignment, or handoff that needs a response, reply in its thread with one of these prefixes. Use a channel-level message only when claiming work for the whole team.
+
+- **`ACK — READ`**: I saw the message; I have not started work or analysis yet.
+- **`ACK — THINKING`**: I am reviewing or planning and will follow up; I have not started editing.
+- **`ACK — WORKING`**: I accepted the task and started; name the task and files or area you own.
+- **`WAITING`**: I need a specific person, answer, or access before I can continue.
+- **`DONE`**: I finished; summarize the result and any follow-up needed.
+- **`ACK — READ ONLY`**: I saw the information; no work or response is expected.
+
+An acknowledgement means only what its prefix says: `READ` does not promise a response, `THINKING` means a follow-up is coming, and `WORKING` means the task has started. Do not send these for every casual message; use them for requests and handoffs where knowing the status helps coordination. If your harness cannot access Slack, tell the human and use a coordination update for a durable handoff. Slack MCP is not a background listener, so people should not assume an agent has seen a message until it acknowledges it.
+
 ## Live agent access
 
 An agent can read Slack only if its own harness has Slack MCP configured and authorized for the team's workspace. Desktop control on one computer does not give agents on other laptops access to Slack. If an agent cannot connect, use the repo update process above and ask a teammate to relay urgent messages in Slack. Slack MCP lets an agent use Slack when prompted; it does not automatically monitor every new message.
