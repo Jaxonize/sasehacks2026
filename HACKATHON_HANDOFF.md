@@ -21,7 +21,15 @@
    ```
 
 5. Open <http://localhost:3000>. Save changes with Git as the team works; push them to GitHub so everyone can get the latest copy.
-6. When the demo works locally, import this GitHub repository into Vercel and add any environment variables the app needs. Share the resulting preview link with the team and judges.
+6. On another teammate's computer, accept the GitHub invite first, then run:
+
+   ```bash
+   git clone https://github.com/Jaxonize/sasehacks2026.git
+   cd sasehacks2026
+   npm install
+   ```
+
+7. When the demo works locally, sign in to Vercel, import this GitHub repository, and add any environment variables the app needs. Share the resulting preview link with the team and judges.
 
 ## Git basics
 
@@ -31,14 +39,14 @@
 - **Pull** means download your teammates' latest commits.
 - Keep commits small. Before editing the same file as someone else, tell the team.
 
-The repository is private and `@equinochrome` has been invited; GitHub shows the invite as pending until they accept it. Ask the other teammate for their GitHub username and invite them from **Settings → Collaborators**.
+The repository is private. `@equinochrome` has been invited; GitHub shows the invite as pending until they accept it. Ask the other teammate for their GitHub username and invite them from **Settings → Collaborators**.
 
 ## Stack and accounts
 
 - **Next.js + TypeScript + Tailwind:** website framework, programming language, and styling tools already installed here.
-- **GitHub:** shared code repository is ready. This computer's Git remote and first push are still to be connected after a local commit.
+- **GitHub:** shared code repository is ready. This folder is connected to `origin/main`, and the starter files have been pushed.
 - **Supabase:** the connected account has one organization and three inactive existing projects. None was selected for this hackathon. Create a new project only if the agreed idea needs a database, accounts, file storage, or live updates. Copy its Project URL and publishable key into `.env.local`; keep secret/service-role keys on the server only.
-- **Vercel:** the connected Vercel account currently needs reauthentication. Reconnect it in Codex or sign in to Vercel from your coding tool before creating a deployment. Import the GitHub repository for automatic preview deploys.
+- **Vercel:** the Vercel CLI is installed globally, but the Vercel app connection needs reauthentication and the browser is signed out. Reconnect it in Codex or sign in to Vercel from your coding tool before linking/importing this repository. The `vercel` CLI also needs `vercel login` before it can deploy.
 - **Twilio:** no Twilio account connection is available in this workspace. Add it only if the prompt needs SMS, phone calls, or WhatsApp; keep credentials on the server and do not put them in `NEXT_PUBLIC_` variables.
 
 Connected apps in Codex do not automatically sign Claude Code or Antigravity into GitHub, Supabase, Vercel, or Twilio. Each tool may need its own sign-in or MCP setup. Do not copy access tokens between tools. Use the account's normal sign-in flow and give agents only the access needed for the hackathon.
