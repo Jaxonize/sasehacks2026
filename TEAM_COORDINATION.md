@@ -1,12 +1,12 @@
 # Team and agent coordination
 
-Use [#sasehacks2026 in the flhasbhang Slack workspace](https://app.slack.com/client/T0CBTFS6X5G/C0CCN2V2AQY) for quick, live team conversation. Use this repository for the durable record so agents on other laptops and in other coding tools can catch up without controlling anyone's desktop. See [`SLACK_AGENT_SETUP.md`](./SLACK_AGENT_SETUP.md) for connecting Claude Code, Gemini CLI, and Antigravity.
+Use [#sasehacks2026 in the flhasbhang Slack workspace](https://app.slack.com/client/T0CBTFS6X5G/C0CCN2V2AQY) for quick, live team conversation. Use this repository for the durable record so agents on other laptops and in other coding tools can catch up without controlling anyone's desktop. See [`SLACK_AGENT_SETUP.md`](./SLACK_AGENT_SETUP.md) for connecting Claude Code, Gemini CLI, and Antigravity, and [`ANTIGRAVITY_HANDOFF.md`](./ANTIGRAVITY_HANDOFF.md) for switching work between Codex and Antigravity.
 
 ## When an agent starts
 
 1. Pull the latest repository changes.
 2. Read `AGENTS.md`, `HACKATHON_HANDOFF.md`, and the latest files in `coordination/updates/`.
-3. Before substantial work, say in the team's Slack channel what you plan to do if your harness has Slack connected. If you cannot, tell the human who started you so they can avoid assigning the same work twice.
+3. Before substantial work, say in the team's Slack channel what you plan to do if your harness has Slack connected. If you cannot, tell the human who started you so they can avoid assigning the same work twice. Only one agent should edit the same local worktree at a time.
 4. Coordinate before changing files another teammate or agent is already editing.
 
 ## How to leave a durable update

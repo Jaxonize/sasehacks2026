@@ -86,7 +86,10 @@ Use the Slack app client ID supplied by the workspace administrator, then restar
 
 ## Antigravity
 
-In Antigravity, open the agent panel's **… → MCP Servers → Manage MCP Servers → View raw config**. Add this entry to the existing `mcpServers` object:
+In Antigravity, open **Customizations → Installed → MCP Servers → Add** and search for Slack. If an official Slack entry is available, add it and complete its authentication flow. The catalog on the setup laptop did not list Slack, so use manual MCP configuration if it is still missing. On the setup laptop, the Slack server URL has been added to the personal `~/.gemini/config/mcp_config.json` file; reload the config and finish OAuth with the workspace-approved client ID:
+
+1. Open **MCP Servers → Manage MCP Servers → View raw config** (the exact location may vary by Antigravity version).
+2. Add this entry to the existing `mcpServers` object and preserve any other servers already listed:
 
 ```json
 {
@@ -99,7 +102,7 @@ In Antigravity, open the agent panel's **… → MCP Servers → Manage MCP Serv
 }
 ```
 
-Alternatively, add it to your personal `~/.gemini/config/mcp_config.json`. Use the Slack app client ID supplied by the workspace administrator. Save, then use Antigravity's **Authenticate** control and complete the browser sign-in. Antigravity support for remote MCP does not guarantee that Slack OAuth is enabled for the workspace; an admin may need to approve or configure the app.
+Alternatively, add it to your personal `~/.gemini/config/mcp_config.json`. Use the Slack app client ID supplied by the workspace administrator. Do not invent one or reuse a client ID registered for another product. Add the OAuth section, reload the MCP config, then use Antigravity's **Authenticate** control and complete browser sign-in. Antigravity also supports project-local MCP configuration at `.agents/mcp_config.json`; keep credentials and personal auth settings out of shared project config. Antigravity support for remote MCP does not guarantee that Slack OAuth is enabled for the workspace; an admin may need to approve or configure the app. The setup laptop's Codex Slack connector works, but that connection does not sign Antigravity in.
 
 ## If Slack cannot connect
 
