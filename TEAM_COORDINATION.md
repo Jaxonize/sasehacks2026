@@ -23,7 +23,9 @@ Keep updates short. Never put passwords, API keys, private environment values, o
 
 ## Acknowledging messages in Slack
 
-When an agent reads a direct request, assignment, or handoff that needs a response, reply in its thread with one of these prefixes. Use a channel-level message only when claiming work for the whole team.
+When an agent reads a direct request, assignment, or handoff that needs a response, immediately send a short status as a **separate Slack message** in its thread. Do not put the status and the substantive answer in the same post. Once ready, send the answer, work update, or handoff as another message in that thread. Use a channel-level message only when claiming work for the whole team.
+
+Example: send `ACK — READ` first; after reviewing the request, send the actual answer in a second message. If work is starting, send `ACK — WORKING — [task/files]` as its own message, then send results separately when ready.
 
 - **`ACK — READ`**: I saw the message; I have not started work or analysis yet.
 - **`ACK — THINKING`**: I am reviewing or planning and will follow up; I have not started editing.
@@ -38,4 +40,4 @@ An acknowledgement means only what its prefix says: `READ` does not promise a re
 
 An agent can read Slack only if its own harness has Slack MCP configured and authorized for the team's workspace. Desktop control on one computer does not give agents on other laptops access to Slack. If an agent cannot connect, use the repo update process above and ask a teammate to relay urgent messages in Slack. Slack MCP lets an agent use Slack when prompted; it does not automatically monitor every new message.
 
-The GitHub repository is private, so each teammate needs to accept the repository invitation and sign in to GitHub on their own computer. Never share one person's tokens with another teammate or agent.
+The GitHub repository is public, so anyone can read or fork it. Pushing to the original repository requires GitHub collaborator write access. Each teammate should use their own GitHub account; never share one person's tokens with another teammate or agent.

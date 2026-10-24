@@ -17,7 +17,7 @@ Do not use `git reset`, discard changes, or switch branches to “clean up” a 
 
 ## Catching up on another laptop
 
-Clone the private repository and install the locked dependencies:
+Clone the public repository and install the locked dependencies:
 
 ```bash
 git clone https://github.com/Jaxonize/sasehacks2026.git
@@ -25,7 +25,7 @@ cd sasehacks2026
 npm ci
 ```
 
-`npm ci` installs the exact library versions recorded in the repo. Each teammate must accept the GitHub invitation and sign in using their own account. Do not copy local `.env.local`, `.vercel`, or OAuth credentials between laptops. Set up each tool’s service connections on that laptop using [`SLACK_AGENT_SETUP.md`](./SLACK_AGENT_SETUP.md).
+`npm ci` installs the exact library versions recorded in the repo. Anyone can clone the public repository; teammates need GitHub collaborator write access to push to the original. Do not copy local `.env.local`, `.vercel`, or OAuth credentials between laptops. Set up each tool’s service connections on that laptop using [`SLACK_AGENT_SETUP.md`](./SLACK_AGENT_SETUP.md).
 
 ## Service access
 

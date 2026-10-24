@@ -2,7 +2,7 @@
 
 ## What is ready
 
-- Private GitHub repository: [Jaxonize/sasehacks2026](https://github.com/Jaxonize/sasehacks2026)
+- Public GitHub repository: [Jaxonize/sasehacks2026](https://github.com/Jaxonize/sasehacks2026)
 - Local Next.js starter in this folder using TypeScript, Tailwind CSS, ESLint, and npm
 - `AGENTS.md` for shared agent instructions, plus `CLAUDE.md` and `GEMINI.md` for Claude Code, Gemini, and Antigravity
 - `.env.example` with safe placeholders; real service keys do not belong in Git
@@ -22,7 +22,7 @@
    ```
 
 6. Open <http://localhost:3000>. Save changes with Git as the team works; push them to GitHub so everyone can get the latest copy.
-7. On another teammate's computer, accept the GitHub invite first, then run:
+7. On another teammate's computer, clone the public repository and install its dependencies:
 
    ```bash
    git clone https://github.com/Jaxonize/sasehacks2026.git
@@ -40,12 +40,12 @@
 - **Pull** means download your teammates' latest commits.
 - Keep commits small. Before editing the same file as someone else, tell the team.
 
-The repository is private. `@equinochrome` has been invited; GitHub shows the invite as pending until they accept it. Ask the other teammate for their GitHub username and invite them from **Settings → Collaborators**.
+The repository is public, so anyone can read or fork it. Only people with GitHub write access can push to the original repository. `@equinochrome` has a collaborator invitation pending; accepting it grants push access. Ask other teammates for their GitHub usernames and invite them from **Settings → Collaborators** if they need to push.
 
 ## Stack and accounts
 
 - **Next.js + TypeScript + Tailwind:** website framework, programming language, and styling tools already installed here.
-- **GitHub:** shared code repository is ready. This folder is connected to `origin/main`, and the starter files have been pushed.
+- **GitHub:** the public shared repository is ready. Anyone can clone it; pushing to the original requires collaborator write access. This folder is connected to `origin/main`, and the starter files have been pushed.
 - **Supabase:** the connected account has one organization and three inactive existing projects. None was selected for this hackathon. Create a new project only if the agreed idea needs a database, accounts, file storage, or live updates. Copy its Project URL and publishable key into `.env.local`; keep secret/service-role keys on the server only.
 - **Vercel:** the Next.js project `sasehacks2026` in the `Flashbang Robotics` team is connected to `Jaxonize/sasehacks2026`. The first production deployment from `main` succeeded at <https://sasehacks2026-nu.vercel.app>; Vercel will automatically deploy later GitHub pushes. Team SSO protection is enabled for default Vercel URLs, so check judge access before sharing a preview link. The Vercel CLI is installed globally, but it still needs `vercel login` before local deployments. This computer's ignored `.vercel/project.json` links this folder to the project. On another computer, run `vercel link --project sasehacks2026 --scope flashbang-robotics` after signing in.
 - **Twilio:** no Twilio account connection is available in this workspace. Add it only if the prompt needs SMS, phone calls, or WhatsApp; keep credentials on the server and do not put them in `NEXT_PUBLIC_` variables.

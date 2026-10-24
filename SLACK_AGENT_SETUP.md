@@ -122,7 +122,7 @@ Alternatively, add it to your personal `~/.gemini/config/mcp_config.json`. Use t
 
 On a new laptop, do these steps in order:
 
-1. Accept the private GitHub repository invitation and sign into GitHub with your own account.
+1. The repository is public, so you can clone it without an invitation. Accept a GitHub collaborator invitation if you need write access to push to the original repository.
 2. Clone the repo and install its locked dependencies:
 
    ```bash
