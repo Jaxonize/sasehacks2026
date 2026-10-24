@@ -29,7 +29,7 @@
    npm install
    ```
 
-7. When the demo works locally, sign in to Vercel, import this GitHub repository, and add any environment variables the app needs. Share the resulting preview link with the team and judges.
+7. The Vercel project `sasehacks2026` already exists in the `Flashbang Robotics` team. To turn on automatic deploys, connect GitHub to Vercel first (instructions below), then open the project and connect `Jaxonize/sasehacks2026` under **Settings → Git**. Vercel will create preview deployments when teammates push changes. Share a preview URL with the team and judges.
 
 ## Git basics
 
@@ -46,7 +46,7 @@ The repository is private. `@equinochrome` has been invited; GitHub shows the in
 - **Next.js + TypeScript + Tailwind:** website framework, programming language, and styling tools already installed here.
 - **GitHub:** shared code repository is ready. This folder is connected to `origin/main`, and the starter files have been pushed.
 - **Supabase:** the connected account has one organization and three inactive existing projects. None was selected for this hackathon. Create a new project only if the agreed idea needs a database, accounts, file storage, or live updates. Copy its Project URL and publishable key into `.env.local`; keep secret/service-role keys on the server only.
-- **Vercel:** the Vercel CLI is installed globally, but the Vercel app connection needs reauthentication and the browser is signed out. Reconnect it in Codex or sign in to Vercel from your coding tool before linking/importing this repository. The `vercel` CLI also needs `vercel login` before it can deploy.
+- **Vercel:** a Next.js project named `sasehacks2026` exists in the `Flashbang Robotics` team, and this computer's ignored `.vercel/project.json` points this folder at it. No deployment exists yet. Vercel requires a GitHub login connection on the account before it can import the repo. In Vercel, open your profile menu → **Settings → Authentication → Add New → GitHub**, sign in and authorize the GitHub account that owns `Jaxonize/sasehacks2026`. Then open the Vercel project → **Settings → Git** and connect that repository. Vercel will then deploy pushes automatically. The Vercel CLI is installed globally, but it still needs `vercel login` before local deployments. The `.vercel` folder is intentionally ignored by Git; on another computer, run `vercel link --project sasehacks2026 --scope flashbang-robotics` after signing in.
 - **Twilio:** no Twilio account connection is available in this workspace. Add it only if the prompt needs SMS, phone calls, or WhatsApp; keep credentials on the server and do not put them in `NEXT_PUBLIC_` variables.
 
 Connected apps in Codex do not automatically sign Claude Code or Antigravity into GitHub, Supabase, Vercel, or Twilio. Each tool may need its own sign-in or MCP setup. Do not copy access tokens between tools. Use the account's normal sign-in flow and give agents only the access needed for the hackathon.
