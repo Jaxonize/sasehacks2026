@@ -16,10 +16,11 @@ Open <http://localhost:3000>. Keep the terminal open while you work. Stop the ap
 ## First steps tomorrow
 
 1. Read [`HACKATHON_HANDOFF.md`](./HACKATHON_HANDOFF.md) with your team.
-2. Paste the exact hackathon prompt into your AI coding tool and ask it to help you agree on the smallest demo that satisfies the judging criteria.
-3. Put the agreed goal and team roles in the handoff doc.
-4. Build one working path through the demo before adding extra features.
-5. Run the app locally. GitHub pushes automatically deploy through the connected Vercel project; the current starter preview is <https://sasehacks2026-nu.vercel.app>. Read the handoff guide about SSO before sharing a link with judges.
+2. Use Discord for live conversation and [`TEAM_COORDINATION.md`](./TEAM_COORDINATION.md) plus `coordination/updates/` for decisions and handoffs agents on other laptops can read through Git.
+3. Paste the exact hackathon prompt into your AI coding tool and ask it to help you agree on the smallest demo that satisfies the judging criteria.
+4. Put the agreed goal and team roles in the handoff doc.
+5. Build one working path through the demo before adding extra features.
+6. Run the app locally. GitHub pushes automatically deploy through the connected Vercel project; the current starter preview is <https://sasehacks2026-nu.vercel.app>. Read the handoff guide about SSO before sharing a link with judges.
 
 ## Useful commands
 

@@ -11,6 +11,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 # Hackathon project rules
 
 - Read `HACKATHON_HANDOFF.md` and the exact event prompt before making product decisions.
+- Read `TEAM_COORDINATION.md` and recent `coordination/updates/` files when starting substantial work. Leave a concise update at meaningful milestones so agents using other tools or laptops can catch up.
 - Ask the team to agree on a small demo before adding features. Do not invent requirements or select extra services without a reason.
 - Explain unfamiliar commands in plain language when guiding the beginner on the team.
 - Keep changes focused and preserve existing working behavior. Coordinate before changing shared files another teammate is editing.
